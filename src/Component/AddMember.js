@@ -10,8 +10,7 @@ const AddMember = () => {
 
   let name, value
   console.log(user)
-  const data = (e) => 
-  {
+  const data = (e) => {
     name = e.target.name;
     value = e.target.value;
     setUser({ ...user, [name]: value })

@@ -1,7 +1,7 @@
 import { useForm, Controller } from 'react-hook-form';
 import 'primeicons/primeicons.css';
-import { signInUser } from "../services/auth"; // Assuming this fetches user
-import { useNavigate } from 'react-router-dom'; // For navigation
+import { signInUser } from "../services/auth"; 
+import { useNavigate } from 'react-router-dom';
 import 'primeicons/primeicons.css';
 import React, { useState } from "react";
 

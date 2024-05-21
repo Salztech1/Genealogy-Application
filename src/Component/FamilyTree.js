@@ -18,13 +18,13 @@ const FamilyTree = () => {
       <h1>Family Tree</h1>
       {userData.length > 0 ? (
         <ul>
-          
+          {/* Iterate through userData and display family tree information */}
           {Object.entries(userData).map(([key, value]) => (
             <li key={key}>
               {value.Name} ({value.Relationship})
               {value.Children && (
                 <ul>
-                  
+                  {/* Recursively display children if available */}
                   {Object.entries(value.Children).map(([childKey, childValue]) => (
                     <li key={childKey}>{childValue.Name} ({childValue.Relationship})</li>
                   ))}
